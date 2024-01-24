@@ -18,8 +18,7 @@ btn.addEventListener("click", () => {
 });
 
 ul.addEventListener("click", (event) => {
-  if (event.target.nodeName === "BUTTON") {
+  if (event.target.className === "close") {
     event.target.parentElement.remove();
-    console.log(event);
   }
 });
